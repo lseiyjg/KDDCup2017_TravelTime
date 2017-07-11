@@ -3,8 +3,8 @@
 
 # 使用指南
 
-1.运行../../Code/KDD_cup_2017.py
-2.生成的../../Submission/submission.csv即为最后一天上传的结果
+1.运行/Code/KDD_cup_2017.py
+2.生成的/Submission/submission.csv即为最后一天上传的结果
 
 
 文件清单
@@ -71,4 +71,4 @@ datetime
 
 
 
-English version is in ../Document
+English version is in /Document
