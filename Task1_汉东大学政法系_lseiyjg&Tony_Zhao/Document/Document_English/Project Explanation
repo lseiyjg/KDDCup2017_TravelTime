@@ -1,0 +1,33 @@
+Project Explanation
+
+1.Read raw data
+
+
+
+2.Select training data and validation data
+
+validation data:
+According to the time window before the target time window,data featured 6:00~8:00 and 15:00~17:00 from 10-25 to 10-31，we select the most similar 7 days as validation data.
+To select the most similar 7 days, first we fill the NAN data with a naive xgboost model, and select the days with least sum of MAE(mean average error).The 7 days is generated as ../../Other/SelectValidation.csv.
+
+training data：
+data excluding the 7 validation days + data of validation days in time window 6:00~8:00,15:00~17:00
+
+
+
+3.Delete abnormal data
+
+As we test locally，we delete data which travel_time is bigger than 500 or smaller than 10.
+
+
+
+4.Predict model
+We use Xgboost mode，featured：
+	one-hot feature of tollgate_id
+	one-hot feature of intersection
+	holiday
+	weekday(0~6)
+        one-hot feature of weekday(wk1~wk7)
+        month
+        time_number（a day is diveded in 72 parts by 20 minutes）
+
