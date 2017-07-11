@@ -1,7 +1,7 @@
 # KDDCup2017_TravelTime
 第一个python项目，KDDCup2017,举办于阿里天池，TravelTime部分代码，复赛11名，但未按时间段分模型，混入未来数据进训练集中，最后没有名次。
 
-使用指南
+# 使用指南
 
 1.运行../../Code/KDD_cup_2017.py
 2.生成的../../Submission/submission.csv即为最后一天上传的结果
@@ -32,7 +32,7 @@ datetime
 
 
 
-预测思路
+# 预测思路
 
 1.读取数据
 
